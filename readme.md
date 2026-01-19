@@ -107,54 +107,6 @@ Dự án triển khai và so sánh nhiều phương pháp:
 | **HOG** | Truyền thống | Phát hiện hình dạng và cạnh |
 | **LBP** | Truyền thống | Phân tích kết cấu |
 
-## 🔧 API Endpoints
-
-Flask backend cung cấp các endpoint sau:
-
-- `POST /predict-vitl14`: Dự đoán sử dụng mô hình CLIP ViT-L/14
-- `POST /predict-dinov2`: Dự đoán sử dụng mô hình DinoV2
-- `POST /predict-resnet50`: Dự đoán sử dụng mô hình ResNet50
-- `GET /keepalive`: Kiểm tra trạng thái server
-
-Định dạng request:
-```json
-{
-  "image":  "chuỗi_ảnh_mã_hóa_base64"
-}
-```
-
-## 📝 Ví dụ sử dụng
-
-```python
-import base64
-import requests
-from PIL import Image
-import io
-
-# Load và mã hóa ảnh
-with open("mon_an_viet.jpg", "rb") as f:
-    image_base64 = base64.b64encode(f.read()).decode('utf-8')
-
-# Thực hiện dự đoán
-response = requests.post(
-    "http://localhost:5000/predict-vitl14",
-    json={"image": image_base64}
-)
-
-result = response.json()
-probabilities = result['Probabilities']
-
-# Tìm món ăn có xác suất cao nhất
-predicted_dish = max(probabilities, key=probabilities.get)
-confidence = probabilities[predicted_dish]
-
-print(f"Món ăn dự đoán: {predicted_dish}")
-print(f"Độ tin cậy: {confidence:.2%}")
-print(f"\nTop 5 dự đoán:")
-for dish in sorted(probabilities, key=probabilities.get, reverse=True)[:5]:
-    print(f"  {dish}: {probabilities[dish]:.2%}")
-```
-
 ## 🛠️ Công nghệ sử dụng
 
 - **Deep Learning Frameworks**: PyTorch, TensorFlow
