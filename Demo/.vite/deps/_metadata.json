@@ -1,0 +1,55 @@
+{
+  "hash": "6bc9f195",
+  "configHash": "ab794513",
+  "lockfileHash": "ddfa719a",
+  "browserHash": "bb65abc9",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "7254f41e",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "7714fe83",
+      "needsInterop": true
+    },
+    "@tensorflow/tfjs": {
+      "src": "../../node_modules/@tensorflow/tfjs/dist/index.js",
+      "file": "@tensorflow_tfjs.js",
+      "fileHash": "8cf9d2cb",
+      "needsInterop": false
+    },
+    "@xenova/transformers": {
+      "src": "../../node_modules/@xenova/transformers/src/transformers.js",
+      "file": "@xenova_transformers.js",
+      "fileHash": "8bc485b6",
+      "needsInterop": false
+    },
+    "libsvm-ts": {
+      "src": "../../node_modules/libsvm-ts/build/index.js",
+      "file": "libsvm-ts.js",
+      "fileHash": "150f1922",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-SVBVURYJ": {
+      "file": "chunk-SVBVURYJ.js"
+    },
+    "chunk-EXAI6KDO": {
+      "file": "chunk-EXAI6KDO.js"
+    },
+    "chunk-C7647EOS": {
+      "file": "chunk-C7647EOS.js"
+    },
+    "chunk-UVQV3GRF": {
+      "file": "chunk-UVQV3GRF.js"
+    },
+    "chunk-PLDDJCW6": {
+      "file": "chunk-PLDDJCW6.js"
+    }
+  }
+}
