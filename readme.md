@@ -1,4 +1,5 @@
 # 🍜 VNFoodsDetector
+https://drive.google.com/file/d/1aht35eIdhrLpwQzuarTi4F3vEBCagoue/view
 
 Hệ thống phân loại món ăn Việt Nam sử dụng deep learning với các mô hình thị giác hiện đại. Dự án này tận dụng nhiều mô hình pre-trained bao gồm CLIP, DinoV2, và ResNet50 để nhận diện chính xác và cung cấp thông tin về 30 loại món ăn Việt Nam khác nhau.
 
